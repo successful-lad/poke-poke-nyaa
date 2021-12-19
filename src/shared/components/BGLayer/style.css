@@ -1,0 +1,15 @@
+.defaultBgConfig {
+    animation-name: MenuBg;
+    animation-duration: 5s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-direction: alternate;
+}
+
+@keyframes MenuBg {
+    0% { background-image: url("./assets/mainBg1.jpg"), url("./assets/mainBg2.jpg"), url("./assets/mainBg3.jpg") }
+    33% { background-image: url("./assets/mainBg2.jpg"), url("./assets/mainBg3.jpg"), url("./assets/mainBg1.jpg") }
+    66% { background-image: url("./assets/mainBg3.jpg"), url("./assets/mainBg1.jpg"), url("./assets/mainBg2.jpg") }
+}
